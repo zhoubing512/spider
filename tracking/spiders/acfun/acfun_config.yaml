@@ -1,0 +1,5 @@
+acfun_tracking_task:
+  <<: *tracker
+
+acfun_indicators_task:
+  <<: *default

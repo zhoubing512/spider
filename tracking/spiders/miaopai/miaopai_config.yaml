@@ -1,0 +1,6 @@
+miaopai_tracking_task:
+  <<: *tracker
+
+miaopai_indicators_task:
+  <<: *default
+    

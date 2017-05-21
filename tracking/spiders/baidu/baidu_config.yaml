@@ -1,0 +1,5 @@
+baidu_hot_search_task:
+  <<: *top
+  steps_variable_settings:
+    CLOSESPIDER_TIMEOUT: 600
+    DOWNLOAD_DELAY: 1

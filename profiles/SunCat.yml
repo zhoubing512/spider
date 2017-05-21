@@ -1,0 +1,8 @@
+spider_variable_settings:
+  TARGET_CHANNEL: 太阳猫
+matchers:
+  - .*toutiao.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:

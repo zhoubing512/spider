@@ -1,0 +1,33 @@
+default: &default
+  label: swarm
+  logRotator_build_num: 150
+  logRotator_artifact_num: 150
+  scm_git_remote_name: origin
+  scm_git_remote_url: 'http://git.zintow.com:10080/spider/tracking.git'
+  scm_git_branch: '*/master'
+  triggers_schedule: 'H/10 * * * *'
+  steps_variable_settings:
+    CLOSESPIDER_TIMEOUT: 600
+    DOWNLOAD_DELAY: 0
+  steps_constant_settings:
+    PLAN_URL: '"http://csss.zintow.com/tracking/plan?limit=200000000"'
+    TRACKING_URL: '"http://csss.zintow.com/tracking/tracker?limit=200000000"'
+    FORBIDDEN_URL: '"http://csss.zintow.com/tracking/forbidden?limit=200000000"'
+    ENTITY_URL: '"http://csss.zintow.com/entity/channel?limit=200000000"'
+    ACCOUNT_URL: '"http://csr.zintow.com"'
+    TARGET_CHANNEL: '"%e5%a5%bd%e5%a5%bd%e5%90%83"'
+  publishers_archive_need: true
+  publishers_archive_filetype: '*.json'
+
+tracker: &tracker
+  <<: *default
+  logRotator_build_num: 5
+  logRotator_artifact_num: 5
+  triggers_schedule: 'H/5 * * * *'
+  publishers_archive_need: false
+
+top: &top
+  <<: *default
+  logRotator_build_num: 5
+  triggers_schedule: 'H/2 * * * *'
+  publishers_archive_need: false

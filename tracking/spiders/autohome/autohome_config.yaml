@@ -1,0 +1,5 @@
+autohome_tracking_task:
+  <<: *tracker
+
+autohome_indicators_task:
+  <<: *default

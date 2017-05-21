@@ -1,0 +1,23 @@
+weibo_tracking_task:
+  <<: *tracker
+  steps_variable_settings:
+    CLOSESPIDER_TIMEOUT: 600
+    DOWNLOAD_DELAY: 0.5
+
+weibo_indicators_task:
+  <<: *default
+  steps_variable_settings:
+    CLOSESPIDER_TIMEOUT: 600
+    DOWNLOAD_DELAY: 0.5
+
+weibo_hot_search_task:
+  <<: *top
+  steps_variable_settings:
+    CLOSESPIDER_TIMEOUT: 600
+    DOWNLOAD_DELAY: 1
+
+weibo_hot_user_task:
+  <<: *top
+  steps_variable_settings:
+    CLOSESPIDER_TIMEOUT: 600
+    DOWNLOAD_DELAY: 1

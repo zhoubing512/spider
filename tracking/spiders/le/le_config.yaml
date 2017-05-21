@@ -1,0 +1,5 @@
+le_tracking_task:
+  <<: *tracker
+
+le_indicators_task:
+  <<: *default

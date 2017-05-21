@@ -1,0 +1,17 @@
+spider_variable_settings:
+  TARGET_CHANNEL: 人民日报
+matchers:
+  - .*weibo.*:
+      jobs:
+        - .*indicator.*:
+            spider_variable_settings:
+              keyword: 好好吃
+        - .*tracking.*:
+            spider_variable_settings:
+              keyword: 好好吃
+        - .*fans.*:
+  - .*miaopai.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:

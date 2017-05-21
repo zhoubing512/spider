@@ -1,0 +1,19 @@
+toutiao_tracking_task:
+  <<: *tracker
+  steps_variable_settings:
+    CLOSESPIDER_TIMEOUT: 600
+    DOWNLOAD_DELAY: 5
+
+toutiao_indicators_task:
+  <<: *default
+  steps_variable_settings:
+    CLOSESPIDER_TIMEOUT: 600
+    DOWNLOAD_DELAY: 3
+
+toutiao_weekly_analysis_task:
+  <<: *default
+  triggers_schedule: 'H H * * 0'
+  steps_variable_settings:
+    CLOSESPIDER_TIMEOUT: 3600
+    DOWNLOAD_DELAY: 0.3
+  publishers_archive_filetype: '*.csv'

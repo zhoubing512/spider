@@ -1,0 +1,5 @@
+iqiyi_tracking_task:
+  <<: *tracker
+
+iqiyi_indicators_task:
+  <<: *default

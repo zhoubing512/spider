@@ -1,0 +1,11 @@
+ifeng_tracking_task:
+  <<: *tracker
+  steps_variable_settings:
+    CLOSESPIDER_TIMEOUT: 600
+    DOWNLOAD_DELAY: 1
+
+ifeng_indicators_task:
+  <<: *default
+  steps_variable_settings:
+    CLOSESPIDER_TIMEOUT: 600
+    DOWNLOAD_DELAY: 1

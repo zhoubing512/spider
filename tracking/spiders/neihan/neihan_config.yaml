@@ -1,0 +1,5 @@
+neihan_tracking_task:
+  <<: *tracker
+
+neihan_indicators_task:
+  <<: *default

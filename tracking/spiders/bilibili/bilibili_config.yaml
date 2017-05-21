@@ -1,0 +1,5 @@
+bilibili_tracking_task:
+  <<: *tracker
+
+bilibili_indicators_task:
+  <<: *default

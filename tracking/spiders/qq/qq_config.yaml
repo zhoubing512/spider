@@ -1,0 +1,5 @@
+qq_indicators_task:
+  <<: *default
+
+qq_tracking_task:
+  <<: *tracker

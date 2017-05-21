@@ -1,0 +1,9 @@
+matchers:
+  - .*:
+      jobs:
+        - .*hot.*:
+            steps_constant_settings:
+              schedule: h 2 * * *
+        - .*weekly.*:
+            steps_constant_settings:
+              schedule: h H * * 0

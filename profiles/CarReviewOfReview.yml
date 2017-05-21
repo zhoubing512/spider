@@ -1,0 +1,85 @@
+spider_variable_settings:
+  TARGET_CHANNEL: 汽车评中评
+matchers:
+  - .*acfun.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+  - .*autohome.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+  - .*bilibili.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+
+  - .*iqiyi.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+  - .*le_.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+  - .*meipai.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+  - .*miaopai.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+  - .*neihan.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+  - .*netease.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+  - .*qq_.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+  - .*sohu.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+  - .*toutiao.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+  - .*uc_.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+  - .*weibo.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+  - .*yidianzixun.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+  - .*youku.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+        - .*fans.*:
+

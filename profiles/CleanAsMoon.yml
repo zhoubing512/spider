@@ -1,0 +1,19 @@
+spider_variable_settings:
+  TARGET_CHANNEL: 净澈如月
+matchers:
+  - .*toutiao.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+  - .*weibo.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+  - .*miaopai.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:
+  - .*meipai.*:
+      jobs:
+        - .*indicator.*:
+        - .*tracking.*:

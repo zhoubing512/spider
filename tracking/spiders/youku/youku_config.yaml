@@ -1,0 +1,11 @@
+youku_tracking_task:
+  <<: *tracker
+  steps_variable_settings:
+    CLOSESPIDER_TIMEOUT: 600
+    DOWNLOAD_DELAY: 0.5
+
+youku_indicators_task:
+  <<: *default
+  steps_variable_settings:
+    CLOSESPIDER_TIMEOUT: 600
+    DOWNLOAD_DELAY: 0.5

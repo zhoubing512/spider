@@ -1,0 +1,6 @@
+yidianzixun_tracking_task:
+  <<: *tracker
+
+yidianzixun_indicators_task:
+  <<: *default
+    

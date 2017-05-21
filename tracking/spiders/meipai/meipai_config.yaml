@@ -1,0 +1,5 @@
+meipai_tracking_task:
+  <<: *tracker
+
+meipai_indicators_task:
+  <<: *default
